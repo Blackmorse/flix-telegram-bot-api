@@ -3,10 +3,6 @@ mod TelegramApi.Handler {
     use Net.{Https, HttpRequest}
     use Util.Json.{Json, ToJson}
 
-    pub eff UserMessageHandler {
-        def handleMessage(message: TelegramUpdate): Unit
-    }
-
     // no need to make public, there is no other options how to send messages now, apart for Https
     eff TelegramMessageSender {
         def sendMessage(message: OutgoingMessage): Result[Error, Unit]

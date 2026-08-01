@@ -2,7 +2,6 @@ mod TelegramApi.Receiver {
     use Util.Json
     use Util.Json.{JsonError, parse, FromJson, JBool, JString, FromJson}
     use TelegramApi.Models.{TelegramUpdate, WithUpdateId, TelegramBotToken}
-    use TelegramApi.Handler.UserMessageHandler
     use Net.{Https, HttpRequest, HttpResponse}
 
     pub eff TelegramUpdatesListener {
