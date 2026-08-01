@@ -40,5 +40,5 @@ jobs:
         run: java -jar flix.jar test
 
       - name: publish
-        run: java -jar flix.jar release --github-token ${{ secrets.GITHUB_TOKEN }}
+        run: java -jar flix.jar release --github-token ${{ secrets.GITHUB_TOKEN }} --yes
 
