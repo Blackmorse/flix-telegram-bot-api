@@ -2,6 +2,6 @@
 name        = "flix-telegram-bot-api"
 repository  = "github:Blackmorse/flix-telegram-bot-api"
 description = "test"
-version     = "0.1.0"
+version     = "0.1.1"
 flix        = "0.75.1"
 authors     = ["Blackmorse <blackmorse@live.com>"]
