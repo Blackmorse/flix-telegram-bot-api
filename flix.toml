@@ -1,5 +1,6 @@
 [package]
 name        = "flix-telegram-bot-api"
+repository  = "github:Blackmorse/flix-telegram-bot-api"
 description = "test"
 version     = "0.1.0"
 flix        = "0.75.1"
