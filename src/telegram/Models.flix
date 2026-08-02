@@ -68,4 +68,11 @@ mod TelegramApi.Models {
             })
         }
     }
+
+    pub enum Error with Eq, ToString {
+        case NetworkError(IoError),
+        case NoUpdatesFound,
+        case UnexpectedResponse(JsonError),
+        case ErrorResponse(String)
+    }
 }

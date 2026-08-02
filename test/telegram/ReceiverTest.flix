@@ -3,8 +3,8 @@ mod TelegramApi.Receiver.Tests {
     use IoError.ErrorKind.ConnectionFailed
     use Net.{Https, HttpRequest}
     use Util.Json.JsonError
-    use TelegramApi.Models.{TelegramBotToken, TelegramUpdate}
-    use TelegramApi.Receiver.{Error, getUpdates}
+    use TelegramApi.Models.{TelegramBotToken, TelegramUpdate, Error}
+    use TelegramApi.Receiver.getUpdates
 
     def botTokenHandler(token: String, f: Unit -> a \ ef): a \ (ef - TelegramBotToken) =
         run {
